@@ -331,16 +331,28 @@ document.getElementById('domainFilter').onchange=e=>{domainFilter=e.target.value
 
 // Boot: load state.json then render
 document.getElementById('view').innerHTML='<div class="card">Loading skill engine state…</div>';
-fetch('./state.json').then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).then(j=>{
+(async function boot(){
+  const urls=['./state.json','https://raw.githubusercontent.com/cantgetalonggta-png/skill-engine-dashboard/main/state.json'];
+  let j=null, last=null;
+  for (const u of urls) {
+    try {
+      const r = await fetch(u, {cache:'no-store'});
+      if (!r.ok) throw new Error(u+' '+r.status);
+      j = await r.json();
+      break;
+    } catch (e) { last = e; }
+  }
+  if (!j) {
+    document.getElementById('view').innerHTML=`<div class="card"><h2>Failed to load state.json</h2><p>${esc(String(last&&last.message||last))}</p></div>`;
+    return;
+  }
   STATE=j;
   atoms=STATE.atoms||{};
   atomList=Object.values(atoms).sort((a,b)=>a.name.localeCompare(b.name));
   domains=[...new Set(atomList.map(a=>a.domain))].sort();
   eng=STATE.engine||{version:'?',cycle:0,modes:[]};
   render();
-}).catch(e=>{
-  document.getElementById('view').innerHTML=`<div class="card error"><h2>Failed to load state.json</h2><p>${esc(e.message)}</p></div>`;
-});
+})();
 </script>
 </body>
 </html>
