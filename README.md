@@ -1,2 +1,5 @@
-# skill-engine-dashboard
-Full Skill Engine Dashboard — distilled skills, master/learned trees, encyclopedia, self-dev tracks, autonomous multi-run
+# Skill Engine Dashboard
+
+Live autonomous skill-tree engine with Master/Learned trees, encyclopedia, insights, self-dev tracks, export tools.
+
+Static deploy — open `index.html` or Vercel.
