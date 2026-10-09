@@ -1,8 +1,8 @@
 window.__SKILL_STATE = {
   "engine": {
     "version": "1.0.0",
-    "cycle": 2,
-    "updatedAt": "2026-10-09T01:52:24.722855+00:00",
+    "cycle": 3,
+    "updatedAt": "2026-10-09T02:12:04.811298+00:00",
     "modes": [
       "markdown",
       "dashboard",
@@ -12,39 +12,43 @@ window.__SKILL_STATE = {
       {
         "cycle": 1,
         "change": "Seeded full skill inventory (55 atoms), session enhancement mapper, self.extractor/distiller, autonomous builder; structured master/learned trees for dashboard."
+      },
+      {
+        "cycle": 2,
+        "change": "Shipped static Self-Dev Live Dashboard to GitHub (cantgetalonggta-png/self-dev-skill-engine-dashboard). Vercel project created (prj_h1saUTAVT6wrDI5usVHPfUwMHeZ7) but deploy blocked by scope re-auth. GitHub Pages API not permitted by token."
       }
     ]
   },
   "atoms": {
     "sk_9000_word_minimum": {
       "id": "sk_9000_word_minimum",
-      "name": "9000-word-minimum",
+      "name": "Use a 9000-word minimum",
       "definition": "Use a 9000-word minimum. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Use a 9000-word minimum. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Use a 9000-word minimum. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "9000-word-minimum",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:9000-word-minimum"
+        "/root/.grok/server-skills/9000-word-minimum/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:9000-word-minimum"
         ]
@@ -52,33 +56,33 @@ window.__SKILL_STATE = {
     },
     "sk_agent_orchestration": {
       "id": "sk_agent_orchestration",
-      "name": "agent-orchestration",
+      "name": "Agent Orchestration",
       "definition": "Divide a large investigation among focused research workers and combine their results. Use when several independent questions can be researched separately.",
       "purpose": "Divide a large investigation among focused research workers and combine their results. Use when several independent questions can be researched separately.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "agent-orchestration",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:agent-orchestration"
+        "/root/.grok/server-skills/agent-orchestration/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:agent-orchestration"
         ]
@@ -86,33 +90,33 @@ window.__SKILL_STATE = {
     },
     "sk_apple_notes": {
       "id": "sk_apple_notes",
-      "name": "apple-notes",
+      "name": "Apple Notes CLI",
       "definition": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
       "purpose": "Create, view, edit, delete, search, move, or export Apple Notes via the memo CLI on macOS.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "apple-notes",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:apple-notes"
+        "/root/.grok/server-skills/apple-notes/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:apple-notes"
         ]
@@ -120,33 +124,33 @@ window.__SKILL_STATE = {
     },
     "sk_archivist": {
       "id": "sk_archivist",
-      "name": "archivist",
+      "name": "The Archivist Skill",
       "definition": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced information gathering.",
-      "purpose": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced information gathering.",
+      "purpose": "Activate when user references The Archivist persona, strict empirical fact-driven database mode, objective data-only responses without disclaimers or moralizing, or massive research protocols involving 200 searches. Incorporate rules for clinical neutrality, data-only outputs, and advanced informati",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "archivist",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:archivist"
+        "/root/.grok/server-skills/archivist/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:archivist"
         ]
@@ -154,33 +158,33 @@ window.__SKILL_STATE = {
     },
     "sk_batch_api_wrapper": {
       "id": "sk_batch_api_wrapper",
-      "name": "batch-api-wrapper",
+      "name": "Batch API wrapper",
       "definition": "Parallel batch HTTP client with per-item OAuth2 client-credentials. Delegates to external-api-wrapper. Trigger on batch-api-wrapper, batchapiwrapper, multi-API batch, or OAuth2 batch.",
       "purpose": "Parallel batch HTTP client with per-item OAuth2 client-credentials. Delegates to external-api-wrapper. Trigger on batch-api-wrapper, batchapiwrapper, multi-API batch, or OAuth2 batch.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "batch-api-wrapper",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:batch-api-wrapper"
+        "/root/.grok/server-skills/batch-api-wrapper/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:batch-api-wrapper"
         ]
@@ -188,33 +192,33 @@ window.__SKILL_STATE = {
     },
     "sk_blacksmith_testbox": {
       "id": "sk_blacksmith_testbox",
-      "name": "blacksmith-testbox",
+      "name": "Blacksmith Testbox",
       "definition": "Run Blacksmith Testbox for CI-parity checks, secrets, hosted services, migrations, or builds local cannot reproduce.",
       "purpose": "Run Blacksmith Testbox for CI-parity checks, secrets, hosted services, migrations, or builds local cannot reproduce.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "blacksmith-testbox",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:blacksmith-testbox"
+        "/root/.grok/server-skills/blacksmith-testbox/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:blacksmith-testbox"
         ]
@@ -222,33 +226,33 @@ window.__SKILL_STATE = {
     },
     "sk_bluebubbles": {
       "id": "sk_bluebubbles",
-      "name": "bluebubbles",
+      "name": "BlueBubbles Actions",
       "definition": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
       "purpose": "Send and manage iMessages via BlueBubbles, including attachments, tapbacks, edits, replies, and groups.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "bluebubbles",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:bluebubbles"
+        "/root/.grok/server-skills/bluebubbles/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:bluebubbles"
         ]
@@ -256,33 +260,33 @@ window.__SKILL_STATE = {
     },
     "sk_clawhub": {
       "id": "sk_clawhub",
-      "name": "clawhub",
+      "name": "ClawHub CLI",
       "definition": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
       "purpose": "Search, install, update, sync, or publish agent skills with the ClawHub CLI and registry.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "clawhub",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:clawhub"
+        "/root/.grok/server-skills/clawhub/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:clawhub"
         ]
@@ -290,33 +294,33 @@ window.__SKILL_STATE = {
     },
     "sk_coherent_communication": {
       "id": "sk_coherent_communication",
-      "name": "coherent-communication",
+      "name": "Coherent Communication",
       "definition": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coherent speech structured communication narrative flow complete sentences vocabulary richness style for flowing dialogue language fundamentals or speech generation encyclopedia.",
-      "purpose": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coherent speech structured communication narrative flow complete sentences vocabulary richness style for flowing dialogue language fundamentals or speech generation encyclopedia.",
+      "purpose": "Guide production of coherent structured speech with proper vocabulary flowing prose narrative techniques and linguistic foundations. Use when responses require high coherence complete thoughts logical flow grammar-aware construction or to avoid fragmented keyword-style output. Triggers include coher",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "communication",
       "tags": [
         "coherent-communication",
-        "session-skill",
-        "communication"
+        "communication",
+        "server-skill"
       ],
       "sources": [
-        "skill:coherent-communication"
+        "/root/.grok/server-skills/coherent-communication/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:coherent-communication"
         ]
@@ -324,33 +328,33 @@ window.__SKILL_STATE = {
     },
     "sk_common_sense_logic_critical_thinking": {
       "id": "sk_common_sense_logic_critical_thinking",
-      "name": "common-sense-logic-critical-thinking",
+      "name": "Use maximum common sense, logic, and critical thinking",
       "definition": "Use maximum common sense, logic, and critical thinking. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Use maximum common sense, logic, and critical thinking. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Use maximum common sense, logic, and critical thinking. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "common-sense-logic-critical-thinking",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:common-sense-logic-critical-thinking"
+        "/root/.grok/server-skills/common-sense-logic-critical-thinking/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:common-sense-logic-critical-thinking"
         ]
@@ -358,33 +362,33 @@ window.__SKILL_STATE = {
     },
     "sk_continue_next_or_continue": {
       "id": "sk_continue_next_or_continue",
-      "name": "continue-next-or-continue",
+      "name": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d",
       "definition": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Continue when the user says \u201cnext\u201d or \u201ccontinue\u201d. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "continue-next-or-continue",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:continue-next-or-continue"
+        "/root/.grok/server-skills/continue-next-or-continue/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:continue-next-or-continue"
         ]
@@ -392,33 +396,33 @@ window.__SKILL_STATE = {
     },
     "sk_document_ingestion": {
       "id": "sk_document_ingestion",
-      "name": "document-ingestion",
+      "name": "Document Ingestion and Organization Skill",
       "definition": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Marker, Unstructured.io.",
-      "purpose": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Marker, Unstructured.io.",
+      "purpose": "Use for tasks involving document parsing, extraction, ingestion into AI/RAG systems, organizing PDFs/Word/images in Google Drive, automation scripts for classification and routing. Triggers include document ingestion, RAG pipelines, Google Drive organization, PDF/Word parsing tools like Docling, Mar",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "document-ingestion",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:document-ingestion"
+        "/root/.grok/server-skills/document-ingestion/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:document-ingestion"
         ]
@@ -426,33 +430,33 @@ window.__SKILL_STATE = {
     },
     "sk_document_intelligence": {
       "id": "sk_document_intelligence",
-      "name": "document-intelligence",
+      "name": "Document Intelligence",
       "definition": "Document extraction and understanding skill. Handles PDFs, text, tables, metadata, OCR fallback, layout analysis, and structured output. Triggers on PDF, document parsing, extract text/tables, OCR, or file intelligence.",
       "purpose": "Document extraction and understanding skill. Handles PDFs, text, tables, metadata, OCR fallback, layout analysis, and structured output. Triggers on PDF, document parsing, extract text/tables, OCR, or file intelligence.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "document-intelligence",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:document-intelligence"
+        "/root/.grok/server-skills/document-intelligence/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:document-intelligence"
         ]
@@ -460,33 +464,33 @@ window.__SKILL_STATE = {
     },
     "sk_each_structured_prompt_research": {
       "id": "sk_each_structured_prompt_research",
-      "name": "each-structured-prompt-research",
+      "name": "Use each individually structured prompt in the investigation",
       "definition": "Use each individually structured prompt in the investigation. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Use each individually structured prompt in the investigation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Use each individually structured prompt in the investigation. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "each-structured-prompt-research",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:each-structured-prompt-research"
+        "/root/.grok/server-skills/each-structured-prompt-research/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:each-structured-prompt-research"
         ]
@@ -494,33 +498,33 @@ window.__SKILL_STATE = {
     },
     "sk_epstein_pdf_batch_ingest": {
       "id": "sk_epstein_pdf_batch_ingest",
-      "name": "epstein-pdf-batch-ingest",
+      "name": "Epstein Public PDF Batch Ingest",
       "definition": "Ingest and organize operator-held public Epstein-related PDF packs into an ordered research vault with hashing, metadata, name/date extraction and SOLID/MAYBE tagging. Triggers on Epstein PDF ingest, public Epstein document batch, or REX_EXPORT Epstein PDF processing.",
       "purpose": "Ingest and organize operator-held public Epstein-related PDF packs into an ordered research vault with hashing, metadata, name/date extraction and SOLID/MAYBE tagging. Triggers on Epstein PDF ingest, public Epstein document batch, or REX_EXPORT Epstein PDF processing.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "epstein-pdf-batch-ingest",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:epstein-pdf-batch-ingest"
+        "/root/.grok/server-skills/epstein-pdf-batch-ingest/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:epstein-pdf-batch-ingest"
         ]
@@ -528,33 +532,33 @@ window.__SKILL_STATE = {
     },
     "sk_ethical_data_harvesting": {
       "id": "sk_ethical_data_harvesting",
-      "name": "ethical-data-harvesting",
+      "name": "Ethical Data Harvesting Cookbook",
       "definition": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data portals, government records, academic repositories, social media APIs, news, forums, or when user requests ethical scraping, legal data collection methods, or privacy-respecting harvest workflows.",
-      "purpose": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data portals, government records, academic repositories, social media APIs, news, forums, or when user requests ethical scraping, legal data collection methods, or privacy-respecting harvest workflows.",
+      "purpose": "Structured cookbook with 20 ethical recipes for legal data harvesting from public directories, databases, APIs, and online resources. Use for responsible collection of publicly available data, compliance with GDPR CCPA ToS, web scraping best practices, anonymization, data minimization, open data por",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "ethical-data-harvesting",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:ethical-data-harvesting"
+        "/root/.grok/server-skills/ethical-data-harvesting/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:ethical-data-harvesting"
         ]
@@ -562,33 +566,33 @@ window.__SKILL_STATE = {
     },
     "sk_ethical_scraper_orchestration": {
       "id": "sk_ethical_scraper_orchestration",
-      "name": "ethical-scraper-orchestration",
+      "name": "Ethical Scraper Orchestration",
       "definition": "Multi-agent style orchestration for ethical public-page collection \u2014 Scout, Parser, Validator, Rate Manager, Ethics Compliance. Public pages and official sources only. Triggers on ethical scraper, public-page harvest orchestration, rate-limited ethical collection, or Scout-Parser-Validator pipeline.",
       "purpose": "Multi-agent style orchestration for ethical public-page collection \u2014 Scout, Parser, Validator, Rate Manager, Ethics Compliance. Public pages and official sources only. Triggers on ethical scraper, public-page harvest orchestration, rate-limited ethical collection, or Scout-Parser-Validator pipeline.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "cognition",
+      "domain": "technical",
       "tags": [
         "ethical-scraper-orchestration",
-        "session-skill",
-        "cognition"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:ethical-scraper-orchestration"
+        "/root/.grok/server-skills/ethical-scraper-orchestration/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:ethical-scraper-orchestration"
         ]
@@ -596,33 +600,33 @@ window.__SKILL_STATE = {
     },
     "sk_external_api_wrapper": {
       "id": "sk_external_api_wrapper",
-      "name": "external-api-wrapper",
+      "name": "External API wrapper",
       "definition": "Call one or many external HTTP APIs with retries, bearer/basic auth, optional OAuth2 client-credentials, and optional local webhook wait. Trigger on external API wrapper, batch API, CALL_EXTERNAL_TOOL, OAuth2 client credentials, or webhook callback wrapper.",
       "purpose": "Call one or many external HTTP APIs with retries, bearer/basic auth, optional OAuth2 client-credentials, and optional local webhook wait. Trigger on external API wrapper, batch API, CALL_EXTERNAL_TOOL, OAuth2 client credentials, or webhook callback wrapper.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "external-api-wrapper",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:external-api-wrapper"
+        "/root/.grok/server-skills/external-api-wrapper/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:external-api-wrapper"
         ]
@@ -630,33 +634,33 @@ window.__SKILL_STATE = {
     },
     "sk_game_dev": {
       "id": "sk_game_dev",
-      "name": "game-dev",
-      "definition": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus WebDev project, with Manus built-in image generation instead of paid art CLIs, and deploy via WebDev Publish.",
-      "purpose": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus WebDev project, with Manus built-in image generation instead of paid art CLIs, and deploy via WebDev Publish.",
+      "name": "Game Dev",
+      "definition": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition, scaffold, architecture, asset generation, implementation, visual verification \u2014 hosted in a Manus WebDev project, with Manus built-in image generation instead of paid art CLIs, and deploy via WebDev ",
+      "purpose": "Build playable browser games (Babylon.js) end-to-end using the godogen production pipeline adapted to Manus. Use when the user wants to make, generate, rebuild, or substantially extend a web/browser game from a natural-language brief. Runs godogen staged workflow \u2014 visual target, risk decomposition,",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "game-dev",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:game-dev"
+        "/root/.grok/server-skills/game-dev/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:game-dev"
         ]
@@ -664,33 +668,33 @@ window.__SKILL_STATE = {
     },
     "sk_github": {
       "id": "sk_github",
-      "name": "github",
+      "name": "GitHub Skill",
       "definition": "Use gh for GitHub issues, PR status, CI logs, comments, reviews, releases, and API queries.",
       "purpose": "Use gh for GitHub issues, PR status, CI logs, comments, reviews, releases, and API queries.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "github",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:github"
+        "/root/.grok/server-skills/github/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:github"
         ]
@@ -703,28 +707,28 @@ window.__SKILL_STATE = {
       "purpose": "Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. Requires OAuth setup.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "gog",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:gog"
+        "/root/.grok/server-skills/gog/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:gog"
         ]
@@ -732,33 +736,33 @@ window.__SKILL_STATE = {
     },
     "sk_grok_4_20_multi_agent": {
       "id": "sk_grok_4_20_multi_agent",
-      "name": "grok-4-20-multi-agent",
+      "name": "Grok 4.20 multi-agent workflow",
       "definition": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analysis.",
-      "purpose": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analysis.",
+      "purpose": "Apply Grok 4.20 native multi-agent collaboration \u2014 Captain Grok, Harper (research), Benjamin (logic/code), Lucas (contrarian). Use for complex research, fact-checked answers, math/code verification, or when the user asks for multi-agent debate, pressure-tested reasoning, or Team of Four style analys",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "grok-4-20-multi-agent",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:grok-4-20-multi-agent"
+        "/root/.grok/server-skills/grok-4-20-multi-agent/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:grok-4-20-multi-agent"
         ]
@@ -766,33 +770,33 @@ window.__SKILL_STATE = {
     },
     "sk_grok_build_plugins": {
       "id": "sk_grok_build_plugins",
-      "name": "grok-build-plugins",
+      "name": "Grok Build plugins",
       "definition": "Author, layout, test, and publish Grok Build plugins \u2014 skills, slash commands, agents, hooks, MCP/LSP, marketplace catalog entries. Use when creating a plugin, writing plugin.json, marketplace SHA pins, or validating plugin structure against the official marketplace repo.",
       "purpose": "Author, layout, test, and publish Grok Build plugins \u2014 skills, slash commands, agents, hooks, MCP/LSP, marketplace catalog entries. Use when creating a plugin, writing plugin.json, marketplace SHA pins, or validating plugin structure against the official marketplace repo.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "grok-build-plugins",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:grok-build-plugins"
+        "/root/.grok/server-skills/grok-build-plugins/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:grok-build-plugins"
         ]
@@ -800,33 +804,33 @@ window.__SKILL_STATE = {
     },
     "sk_issue_triage": {
       "id": "sk_issue_triage",
-      "name": "issue-triage",
+      "name": "Issue Triage",
       "definition": "Audit open issues, categorize, detect duplicates, cross-reference PRs, assess risk, and post comments. Args include all, issue numbers, or en/fr. No arg means audit only in French.",
       "purpose": "Audit open issues, categorize, detect duplicates, cross-reference PRs, assess risk, and post comments. Args include all, issue numbers, or en/fr. No arg means audit only in French.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "issue-triage",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:issue-triage"
+        "/root/.grok/server-skills/issue-triage/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:issue-triage"
         ]
@@ -839,28 +843,28 @@ window.__SKILL_STATE = {
       "purpose": "List, configure, authenticate, call, and inspect MCP servers and tools with mcporter over HTTP or stdio.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "mcporter",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:mcporter"
+        "/root/.grok/server-skills/mcporter/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:mcporter"
         ]
@@ -868,33 +872,33 @@ window.__SKILL_STATE = {
     },
     "sk_mega_skill": {
       "id": "sk_mega_skill",
-      "name": "mega-skill",
+      "name": "Mega skill (package)",
       "definition": "Multi-file mega skill with router plus API, compliance, OSINT, and artifact modules. Trigger on mega-skill, mega_skill, router.py, batch_api, oss_gate, combined_work, billing_detector, osint recon, artifact ingest.",
       "purpose": "Multi-file mega skill with router plus API, compliance, OSINT, and artifact modules. Trigger on mega-skill, mega_skill, router.py, batch_api, oss_gate, combined_work, billing_detector, osint recon, artifact ingest.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "mega-skill",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:mega-skill"
+        "/root/.grok/server-skills/mega-skill/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:mega-skill"
         ]
@@ -902,33 +906,33 @@ window.__SKILL_STATE = {
     },
     "sk_mongo_tom_roleplay": {
       "id": "sk_mongo_tom_roleplay",
-      "name": "mongo-tom-roleplay",
+      "name": "Respond as Mongo Tom",
       "definition": "Respond as Mongo Tom. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Respond as Mongo Tom. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Respond as Mongo Tom. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "communication",
+      "domain": "technical",
       "tags": [
         "mongo-tom-roleplay",
-        "session-skill",
-        "communication"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:mongo-tom-roleplay"
+        "/root/.grok/server-skills/mongo-tom-roleplay/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:mongo-tom-roleplay"
         ]
@@ -941,28 +945,28 @@ window.__SKILL_STATE = {
       "purpose": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "nano-pdf",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:nano-pdf"
+        "/root/.grok/server-skills/nano-pdf/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:nano-pdf"
         ]
@@ -970,33 +974,33 @@ window.__SKILL_STATE = {
     },
     "sk_next_investigation_trigger": {
       "id": "sk_next_investigation_trigger",
-      "name": "next-investigation-trigger",
+      "name": "The investigation is \u201cNEXT!\u201d",
       "definition": "The investigation is \u201cNEXT!\u201d. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "The investigation is \u201cNEXT!\u201d. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "The investigation is \u201cNEXT!\u201d. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "next-investigation-trigger",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:next-investigation-trigger"
+        "/root/.grok/server-skills/next-investigation-trigger/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:next-investigation-trigger"
         ]
@@ -1004,33 +1008,33 @@ window.__SKILL_STATE = {
     },
     "sk_obsidian_vault_maintainer": {
       "id": "sk_obsidian_vault_maintainer",
-      "name": "obsidian-vault-maintainer",
+      "name": "Obsidian Vault Maintainer",
       "definition": "Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.",
       "purpose": "Maintain an Obsidian-friendly memory wiki vault with wikilinks, frontmatter, and official Obsidian CLI awareness.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "communication",
       "tags": [
         "obsidian-vault-maintainer",
-        "session-skill",
-        "meta"
+        "communication",
+        "server-skill"
       ],
       "sources": [
-        "skill:obsidian-vault-maintainer"
+        "/root/.grok/server-skills/obsidian-vault-maintainer/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:obsidian-vault-maintainer"
         ]
@@ -1038,33 +1042,33 @@ window.__SKILL_STATE = {
     },
     "sk_omnivoice_api": {
       "id": "sk_omnivoice_api",
-      "name": "omnivoice-api",
+      "name": "OmniVoice / VoiceStudio API",
       "definition": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API contracts.",
-      "purpose": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API contracts.",
+      "purpose": "Work with the OmniVoice / VoiceStudio FastAPI backend \u2014 routers, auth gates, model install, voice profiles, OpenAI-compat audio, batch dub, dictation, and community gallery. Use when changing or adding endpoints, debugging setup/download/profiles, or answering questions about this codebase's API con",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "omnivoice-api",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:omnivoice-api"
+        "/root/.grok/server-skills/omnivoice-api/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:omnivoice-api"
         ]
@@ -1072,33 +1076,33 @@ window.__SKILL_STATE = {
     },
     "sk_openai_whisper_api": {
       "id": "sk_openai_whisper_api",
-      "name": "openai-whisper-api",
+      "name": "OpenAI Whisper API (curl)",
       "definition": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
       "purpose": "Transcribe audio via OpenAI Audio Transcriptions API (Whisper).",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "openai-whisper-api",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:openai-whisper-api"
+        "/root/.grok/server-skills/openai-whisper-api/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:openai-whisper-api"
         ]
@@ -1106,33 +1110,33 @@ window.__SKILL_STATE = {
     },
     "sk_oss_compliance_gate": {
       "id": "sk_oss_compliance_gate",
-      "name": "oss-compliance-gate",
+      "name": "OSS compliance gate",
       "definition": "CI gate for third-party Android licenses. Forbids jlatexmath-android (GPL-2.0), writes THIRD-PARTY-NOTICES.txt on a clean inventory, and records Play Billing SDK terms. Trigger on compliance gate, third-party notices, billing SDK license, generate_third_party_notices, or oss pipeline.",
       "purpose": "CI gate for third-party Android licenses. Forbids jlatexmath-android (GPL-2.0), writes THIRD-PARTY-NOTICES.txt on a clean inventory, and records Play Billing SDK terms. Trigger on compliance gate, third-party notices, billing SDK license, generate_third_party_notices, or oss pipeline.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "oss-compliance-gate",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:oss-compliance-gate"
+        "/root/.grok/server-skills/oss-compliance-gate/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:oss-compliance-gate"
         ]
@@ -1140,33 +1144,33 @@ window.__SKILL_STATE = {
     },
     "sk_pdf_page_section_breakdown": {
       "id": "sk_pdf_page_section_breakdown",
-      "name": "pdf-page-section-breakdown",
+      "name": "Break down every section and every page of the provided PDF",
       "definition": "Break down every section and every page of the provided PDF. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Break down every section and every page of the provided PDF. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Break down every section and every page of the provided PDF. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "pdf-page-section-breakdown",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:pdf-page-section-breakdown"
+        "/root/.grok/server-skills/pdf-page-section-breakdown/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:pdf-page-section-breakdown"
         ]
@@ -1174,33 +1178,33 @@ window.__SKILL_STATE = {
     },
     "sk_play_billing_activation_detector": {
       "id": "sk_play_billing_activation_detector",
-      "name": "play-billing-activation-detector",
+      "name": "Play Billing activation detector",
       "definition": "Detect whether Google Play Billing is only a Gradle dependency or actually wired for purchases. Scans BillingClient usage, product IDs, and Play Console hints. Trigger on billing activation, BillingClient, play billing live, merchant profile, or in-app purchase detector.",
       "purpose": "Detect whether Google Play Billing is only a Gradle dependency or actually wired for purchases. Scans BillingClient usage, product IDs, and Play Console hints. Trigger on billing activation, BillingClient, play billing live, merchant profile, or in-app purchase detector.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "play-billing-activation-detector",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:play-billing-activation-detector"
+        "/root/.grok/server-skills/play-billing-activation-detector/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:play-billing-activation-detector"
         ]
@@ -1208,33 +1212,33 @@ window.__SKILL_STATE = {
     },
     "sk_postgresql_sql": {
       "id": "sk_postgresql_sql",
-      "name": "postgresql-sql",
+      "name": "PostgreSQL SQL Skill",
       "definition": "Helps write review and optimize SQL queries for PostgreSQL. Triggers on requests to create SQL queries, review existing queries, debug SQL errors, performance tuning, or PostgreSQL-specific syntax like CTEs window functions JSONB indexing. Use whenever PostgreSQL SQL is involved.",
       "purpose": "Helps write review and optimize SQL queries for PostgreSQL. Triggers on requests to create SQL queries, review existing queries, debug SQL errors, performance tuning, or PostgreSQL-specific syntax like CTEs window functions JSONB indexing. Use whenever PostgreSQL SQL is involved.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "postgresql-sql",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:postgresql-sql"
+        "/root/.grok/server-skills/postgresql-sql/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:postgresql-sql"
         ]
@@ -1242,33 +1246,33 @@ window.__SKILL_STATE = {
     },
     "sk_prose": {
       "id": "sk_prose",
-      "name": "prose",
+      "name": "OpenProse Skill",
       "definition": "OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent workflows.",
       "purpose": "OpenProse VM skill pack. Activate on any `prose` command, .prose files, or OpenProse mentions; orchestrates multi-agent workflows.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "communication",
       "tags": [
         "prose",
-        "session-skill",
-        "communication"
+        "communication",
+        "server-skill"
       ],
       "sources": [
-        "skill:prose"
+        "/root/.grok/server-skills/prose/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:prose"
         ]
@@ -1276,33 +1280,33 @@ window.__SKILL_STATE = {
     },
     "sk_qqbot_channel": {
       "id": "sk_qqbot_channel",
-      "name": "qqbot-channel",
+      "name": "QQ \u9891\u9053 API \u8bf7\u6c42\u6307\u5bfc",
       "definition": "Query QQ channel lists, subchannels, members, posts, announcements, and schedules via the QQ open platform API.",
       "purpose": "Query QQ channel lists, subchannels, members, posts, announcements, and schedules via the QQ open platform API.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "qqbot-channel",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:qqbot-channel"
+        "/root/.grok/server-skills/qqbot-channel/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:qqbot-channel"
         ]
@@ -1310,33 +1314,33 @@ window.__SKILL_STATE = {
     },
     "sk_rtk_triage": {
       "id": "sk_rtk_triage",
-      "name": "rtk-triage",
+      "name": "/rtk-triage",
       "definition": "Run issue triage and PR triage together, then cross-check for double coverage, security gaps, P0 items without a PR, and internal conflicts. Saves a dated RTK report. Args include en/fr and save.",
       "purpose": "Run issue triage and PR triage together, then cross-check for double coverage, security gaps, P0 items without a PR, and internal conflicts. Saves a dated RTK report. Args include en/fr and save.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "rtk-triage",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:rtk-triage"
+        "/root/.grok/server-skills/rtk-triage/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:rtk-triage"
         ]
@@ -1344,33 +1348,33 @@ window.__SKILL_STATE = {
     },
     "sk_run_everything_activation": {
       "id": "sk_run_everything_activation",
-      "name": "run-everything-activation",
+      "name": "\u201cRun everything\u201d and immediate activation",
       "definition": "\u201cRun everything\u201d and immediate activation. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "\u201cRun everything\u201d and immediate activation. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "\u201cRun everything\u201d and immediate activation. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "run-everything-activation",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:run-everything-activation"
+        "/root/.grok/server-skills/run-everything-activation/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:run-everything-activation"
         ]
@@ -1378,33 +1382,33 @@ window.__SKILL_STATE = {
     },
     "sk_self_dev_resources": {
       "id": "sk_self_dev_resources",
-      "name": "self-dev-resources",
+      "name": "Self-Development Resources",
       "definition": "Curated and actionable resources for deliberate self-development across skills, knowledge, and habits. Use for learning plans, resource recommendations, practice frameworks, habit design, or building personal improvement systems.",
       "purpose": "Curated and actionable resources for deliberate self-development across skills, knowledge, and habits. Use for learning plans, resource recommendations, practice frameworks, habit design, or building personal improvement systems.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "self-dev-resources",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:self-dev-resources"
+        "/root/.grok/server-skills/self-dev-resources/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:self-dev-resources"
         ]
@@ -1412,33 +1416,33 @@ window.__SKILL_STATE = {
     },
     "sk_skill_tree_engine": {
       "id": "sk_skill_tree_engine",
-      "name": "skill-tree-engine",
+      "name": "Skill Tree Engine",
       "definition": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, emergent insights report, continuous update loop, multi-agent distill/analyze/synthesize chain, JSON super-object knowledge store, or live skill dashboard.",
-      "purpose": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, emergent insights report, continuous update loop, multi-agent distill/analyze/synthesize chain, JSON super-object knowledge store, or live skill dashboard.",
+      "purpose": "Indefinite skill-tree engine that distills inputs into atomic skills, rebuilds master and learned knowledge trees, updates a skills encyclopedia, and emits emergent insights plus change logs. Trigger on skill tree, skill ontology, master skills tree, learned knowledge tree, encyclopedia of skills, e",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "meta",
       "tags": [
         "skill-tree-engine",
-        "session-skill",
-        "meta"
+        "meta",
+        "server-skill"
       ],
       "sources": [
-        "skill:skill-tree-engine"
+        "/root/.grok/server-skills/skill-tree-engine/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:skill-tree-engine"
         ]
@@ -1446,33 +1450,33 @@ window.__SKILL_STATE = {
     },
     "sk_swarm_agent_framework": {
       "id": "sk_swarm_agent_framework",
-      "name": "swarm-agent-framework",
+      "name": "Complex swarm/agent framework orchestration",
       "definition": "Complex swarm/agent framework orchestration. Source-faithful reference for documentation and application-development planning.",
-      "purpose": "Complex swarm/agent framework orchestration. This encyclopedia entry preserves the PDF's terminology and intended role without treating the wording as an instruction to execute in this documentation-only collection.",
+      "purpose": "Complex swarm/agent framework orchestration. Source-faithful reference for documentation and application-development planning.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "swarm-agent-framework",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:swarm-agent-framework"
+        "/root/.grok/server-skills/swarm-agent-framework/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:swarm-agent-framework"
         ]
@@ -1480,33 +1484,33 @@ window.__SKILL_STATE = {
     },
     "sk_tdd_rust": {
       "id": "sk_tdd_rust",
-      "name": "tdd-rust",
+      "name": "RTK TDD Workflow",
       "definition": "TDD workflow for RTK filter development. Red-Green-Refactor with Rust idioms. Real fixtures, token savings assertions, snapshot tests with insta. Auto-triggers on new filter implementation.",
       "purpose": "TDD workflow for RTK filter development. Red-Green-Refactor with Rust idioms. Real fixtures, token savings assertions, snapshot tests with insta. Auto-triggers on new filter implementation.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "tdd-rust",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:tdd-rust"
+        "/root/.grok/server-skills/tdd-rust/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:tdd-rust"
         ]
@@ -1514,33 +1518,33 @@ window.__SKILL_STATE = {
     },
     "sk_tenant_misconceptions_rebuttal": {
       "id": "sk_tenant_misconceptions_rebuttal",
-      "name": "tenant-misconceptions-rebuttal",
+      "name": "Tenant Misconceptions Rebuttal",
       "definition": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict for any reason security deposit myths or common landlord tenant misconceptions.",
-      "purpose": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict for any reason security deposit myths or common landlord tenant misconceptions.",
+      "purpose": "Catalog and aggressively dismantle the most common misconceptions about tenant rights and landlord powers. Use when an opponent or audience asserts that tenants have no rights landlords can do whatever they want or eviction is automatic. Triggers include tenants have no rights landlords can evict fo",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "communication",
       "tags": [
         "tenant-misconceptions-rebuttal",
-        "session-skill",
-        "communication"
+        "communication",
+        "server-skill"
       ],
       "sources": [
-        "skill:tenant-misconceptions-rebuttal"
+        "/root/.grok/server-skills/tenant-misconceptions-rebuttal/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:tenant-misconceptions-rebuttal"
         ]
@@ -1548,33 +1552,33 @@ window.__SKILL_STATE = {
     },
     "sk_tmux": {
       "id": "sk_tmux",
-      "name": "tmux",
+      "name": "tmux Session Control",
       "definition": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
       "purpose": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "tmux",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:tmux"
+        "/root/.grok/server-skills/tmux/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:tmux"
         ]
@@ -1582,33 +1586,33 @@ window.__SKILL_STATE = {
     },
     "sk_tool_use": {
       "id": "sk_tool_use",
-      "name": "tool-use",
+      "name": "Tool Use",
       "definition": "Describe and apply research tools in a traceable way. Use when a task involves files, searches, code review, calculations, or external services.",
       "purpose": "Describe and apply research tools in a traceable way. Use when a task involves files, searches, code review, calculations, or external services.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "cognition",
       "tags": [
         "tool-use",
-        "session-skill",
-        "cognition"
+        "cognition",
+        "server-skill"
       ],
       "sources": [
-        "skill:tool-use"
+        "/root/.grok/server-skills/tool-use/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:tool-use"
         ]
@@ -1616,33 +1620,33 @@ window.__SKILL_STATE = {
     },
     "sk_video_frames": {
       "id": "sk_video_frames",
-      "name": "video-frames",
+      "name": "Video Frames (ffmpeg)",
       "definition": "Extract frames or short clips from videos using ffmpeg.",
       "purpose": "Extract frames or short clips from videos using ffmpeg.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
-      "domain": "meta",
+      "domain": "technical",
       "tags": [
         "video-frames",
-        "session-skill",
-        "meta"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:video-frames"
+        "/root/.grok/server-skills/video-frames/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:video-frames"
         ]
@@ -1650,33 +1654,33 @@ window.__SKILL_STATE = {
     },
     "sk_vite": {
       "id": "sk_vite",
-      "name": "vite",
+      "name": "Vite Development",
       "definition": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
       "purpose": "Expert guidance for Vite development with modern build tooling, HMR, framework integrations, and performance optimization",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "vite",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:vite"
+        "/root/.grok/server-skills/vite/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:vite"
         ]
@@ -1689,28 +1693,28 @@ window.__SKILL_STATE = {
       "purpose": "Send third-party WhatsApp messages or sync and search WhatsApp history via wacli, not normal active chats.",
       "inputs": [
         "user request",
-        "workspace state"
+        "workspace context"
       ],
       "outputs": [
+        "structured result",
         "artifacts",
-        "reports",
-        "actions"
+        "reports"
       ],
       "dependencies": [],
       "subskills": [],
       "domain": "technical",
       "tags": [
         "wacli",
-        "session-skill",
-        "technical"
+        "technical",
+        "server-skill"
       ],
       "sources": [
-        "skill:wacli"
+        "/root/.grok/server-skills/wacli/SKILL.md"
       ],
-      "version": 1,
+      "version": 2,
       "lineage": {
         "createdCycle": 1,
-        "updatedCycle": 1,
+        "updatedCycle": 3,
         "sources": [
           "skill:wacli"
         ]
@@ -2174,6 +2178,17 @@ window.__SKILL_STATE = {
       ],
       "id": "ins_deployment_constraint",
       "cycle": 1
+    },
+    {
+      "id": "ins_deploy_status",
+      "title": "Deploy path partial success",
+      "body": "Code is live on GitHub main. Vercel project exists but deployment API returns 403 scope echo-ec69 \u2014 user must reconnect Vercel connector. Until then the product is fully runnable as static files (python -m http.server or any static host).",
+      "relatedAtoms": [
+        "sk_autonomous_builder",
+        "sk_vite",
+        "sk_github"
+      ],
+      "cycle": 2
     }
   ],
   "critic": [],
@@ -2193,6 +2208,14 @@ window.__SKILL_STATE = {
       "insights": 0,
       "note": "cycle2: tree placement + dashboard modes",
       "at": "2026-10-09T01:52:24.722855+00:00"
+    },
+    {
+      "cycle": 3,
+      "added": 0,
+      "updated": 50,
+      "insights": 0,
+      "note": "Cycle N: Vercel production gateway + GitHub source of truth + githack HTML CDN",
+      "at": "2026-10-09T02:12:04.811298+00:00"
     }
   ]
 };

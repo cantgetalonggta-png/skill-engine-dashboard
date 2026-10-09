@@ -17,3 +17,9 @@ _cycle 1 · related: sk_self_extractor, sk_self_distiller, sk_self_dev_resources
 Vercel MCP reports empty teams; CLI absent. Deployment path must use create_project + create_deployment with inlined files or GitHub push + create_git_project. Prefer GitHub-first for durable source of truth.
 
 _cycle 1 · related: sk_autonomous_builder, sk_github, sk_vite_
+
+## Deploy path partial success
+
+Code is live on GitHub main. Vercel project exists but deployment API returns 403 scope echo-ec69 — user must reconnect Vercel connector. Until then the product is fully runnable as static files (python -m http.server or any static host).
+
+_cycle 2 · related: sk_autonomous_builder, sk_vite, sk_github_
