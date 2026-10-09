@@ -104,6 +104,7 @@ nav{display:flex;flex-direction:column;gap:4px;flex:1}
 </div>
 <div class="toast" id="toast"></div>
 
+<script src="./state.js"></script>
 <script>
 let STATE = null;
 const SELF_DEV = [{"id": "sd_deliberate_practice", "domain": "Meta-Skills", "title": "Deliberate Practice Loops", "why": "Practice + feedback beats passive consumption for skill acquisition.", "practice": "Pick one atomic skill from the master tree. Design a 25-min focused drill with immediate scoring rubric.", "schedule": "Daily 25m + weekly review 45m", "metric": "Can-do statement: I can execute X without notes in under Y minutes", "prereq": "Clear SkillAtom definition", "time": "2\u20134 weeks per atom"}, {"id": "sd_spaced_rep", "domain": "Cognition", "title": "Spaced Repetition + Interleaving", "why": "Retention multiplies when retrieval is effortful and mixed across domains.", "practice": "Anki or free-recall cards for definitions, dependencies, and failure modes of top 20 atoms.", "schedule": "15m daily; interleave 3 domains", "metric": "90% recall at 7-day lag", "prereq": "Encyclopedia export", "time": "Ongoing"}, {"id": "sd_critical_chain", "domain": "Cognition", "title": "Critical Thinking Reasoning Chain", "why": "Maximum common sense + logic + critical thinking as ontological core.", "practice": "For any claim: premises \u2192 evidence \u2192 alternatives \u2192 conclusion checklist. Log 5 critiques/week.", "schedule": "3x/week on insights + project decisions", "metric": "Written critique notes with orphan/cycle detection", "prereq": "common-sense-logic-critical-thinking atom", "time": "1 week to habit"}, {"id": "sd_vite_ship", "domain": "Technical Practice", "title": "Ship Loop: Vite \u2192 Vercel", "why": "Close the loop from skill distillation to live product.", "practice": "Build one module per cycle; deploy; verify all buttons/routes; write change log.", "schedule": "Every engine cycle", "metric": "Live URL + green build + functional smoke checklist", "prereq": "vite + github/vercel connectors", "time": "1\u20132 days per major module"}, {"id": "sd_writing", "domain": "Communication", "title": "Coherent Communication Drills", "why": "Structured prose multiplies teaching and collaboration quality.", "practice": "Rewrite one encyclopedia entry into a 400-word teaching note with examples.", "schedule": "2x/week", "metric": "Peer or self-rubric score \u2265 4/5 on clarity and flow", "prereq": "coherent-communication skill", "time": "Ongoing"}, {"id": "sd_habit_review", "domain": "Professional Habits", "title": "Weekly Planning & Review", "why": "Track progress with concrete metrics and can-do statements.", "practice": "Sunday: plan 3 atoms. Friday: review metrics, promote/demote atoms on trees.", "schedule": "Weekly", "metric": "Completed can-do statements / planned", "prereq": "Dashboard log", "time": "60m/week"}, {"id": "sd_multi_agent", "domain": "Meta-Skills", "title": "Multi-Agent Distill\u2192Critique Chain", "why": "Parallel roles reduce blind spots: Distiller, Analyzer, Synthesizer, Ontologist, Inferencer, Critic, Upgrader.", "practice": "Run one multi-agent block on a new skill batch; merge; export.", "schedule": "Each engine cycle", "metric": "Zero unresolved critic findings after cycle", "prereq": "skill-tree-engine multi-agent mode", "time": "Per cycle"}, {"id": "sd_ethical_data", "domain": "Technical Practice", "title": "Ethical Public Data Harvest", "why": "Legal, rate-limited, ToS-respecting collection expands knowledge without risk.", "practice": "One scout\u2192parser\u2192validator pipeline on an open data portal.", "schedule": "Optional project weeks", "metric": "Documented compliance checklist + dataset manifest", "prereq": "ethical-data-harvesting", "time": "3\u20135 days per pipeline"}];
@@ -332,18 +333,21 @@ document.getElementById('domainFilter').onchange=e=>{domainFilter=e.target.value
 // Boot: load state.json then render
 document.getElementById('view').innerHTML='<div class="card">Loading skill engine state…</div>';
 (async function boot(){
-  const urls=['./state.json','https://raw.githubusercontent.com/cantgetalonggta-png/skill-engine-dashboard/main/state.json'];
-  let j=null, last=null;
-  for (const u of urls) {
-    try {
-      const r = await fetch(u, {cache:'no-store'});
-      if (!r.ok) throw new Error(u+' '+r.status);
-      j = await r.json();
-      break;
-    } catch (e) { last = e; }
+  let j = window.__SKILL_STATE || null;
+  let last=null;
+  if (!j) {
+    const urls=['./state.json','https://cdn.jsdelivr.net/gh/cantgetalonggta-png/skill-engine-dashboard@main/state.json'];
+    for (const u of urls) {
+      try {
+        const r = await fetch(u, {cache:'no-store'});
+        if (!r.ok) throw new Error(u+' '+r.status);
+        j = await r.json();
+        break;
+      } catch (e) { last = e; }
+    }
   }
   if (!j) {
-    document.getElementById('view').innerHTML=`<div class="card"><h2>Failed to load state.json</h2><p>${esc(String(last&&last.message||last))}</p></div>`;
+    document.getElementById('view').innerHTML=`<div class="card"><h2>Failed to load state</h2><p>${esc(String(last&&last.message||last))}</p></div>`;
     return;
   }
   STATE=j;
